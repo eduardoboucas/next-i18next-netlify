@@ -14,7 +14,7 @@ import config from '../next-i18next.config.js'
 
 export const getStaticProps = async ({locale}) => ({
   props: {
-    ...await serverSideTranslations(locale, [], config),
+    ...await serverSideTranslations(locale),
   },
 })
 

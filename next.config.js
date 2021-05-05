@@ -12,9 +12,9 @@ module.exports = {
     return config;
   },
   target: "serverless",
-  unstableNetlifyFunctionsSupport: {
-    "pages/[[...pid]].js": {
-      includeDirs: ["public"]
-    }
-  }
+  // unstableNetlifyFunctionsSupport: {
+  //   "pages/[[...pid]].js": {
+  //     includeDirs: ["public"]
+  //   }
+  // }
 }
