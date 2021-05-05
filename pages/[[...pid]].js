@@ -32,6 +32,7 @@ export default function Home(props) {
   return (
     <div className="container">
       <main>
+        <h1>{t("common.test")}</h1>
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
