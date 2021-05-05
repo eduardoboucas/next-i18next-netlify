@@ -5,7 +5,7 @@ import {useTranslation} from "next-i18next"
 const config = {
   i18n: {
     defaultLocale: 'fr',
-    locales: ['en', 'fr'],
+    locales: ['fr', 'en'],
     ns: ["common"],
     defaultNS: "common",
   },
@@ -13,7 +13,7 @@ const config = {
 
 export const getStaticProps = async ({locale}) => ({
   props: {
-    ...await serverSideTranslations(locale, [], config),
+    ...await serverSideTranslations(locale),
   },
 })
 
