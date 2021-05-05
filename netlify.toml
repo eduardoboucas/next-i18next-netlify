@@ -3,7 +3,7 @@
   publish = "out"
 
 [functions]
-  included_files = ["next-i18next.config.js", "public/*"]
+  included_files = ["public/*"]
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
