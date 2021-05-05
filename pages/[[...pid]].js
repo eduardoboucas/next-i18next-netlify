@@ -2,10 +2,18 @@ import Head from 'next/head'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useTranslation} from "next-i18next"
 
+const config = {
+  i18n: {
+    defaultLocale: 'fr',
+    locales: ['en', 'fr'],
+    ns: ["common"],
+    defaultNS: "common",
+  },
+}
 
 export const getStaticProps = async ({locale}) => ({
   props: {
-    ...await serverSideTranslations(locale),
+    ...await serverSideTranslations(locale, [], config),
   },
 })
 
@@ -20,11 +28,10 @@ export async function getStaticPaths() {
 
 
 export default function Home(props) {
-  const {t} = useTranslation();
+  // const {t} = useTranslation();
   return (
     <div className="container">
       <main>
-        <h1>{t("common.test")}</h1>
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
