@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 
 
 export default function Home(props) {
-  // const {t} = useTranslation();
+  const {t} = useTranslation();
   return (
     <div className="container">
       <main>
