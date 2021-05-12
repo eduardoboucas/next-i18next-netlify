@@ -1,9 +1,9 @@
 [build]
-  command = "npm run build"
-  publish = "out"
+command = "npm run build && cp debug/serverSideTranslations.js node_modules/next-i18next/dist/commonjs"
+publish = "out"
 
 [functions]
-  included_files = ["next-i18next.config.js", "public/*"]
+included_files = ["next-i18next.config.js", "public/*"]
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
+package = "@netlify/plugin-nextjs"
