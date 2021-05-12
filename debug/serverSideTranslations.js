@@ -157,6 +157,7 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
                 const srcPath = _path["default"].resolve("./src");
                 console.log("---> root:", _fs["default"].readdirSync(rootPath));
                 console.log("---> src:", _fs["default"].readdirSync(srcPath));
+                console.log("---> cwd:", process.cwd());
                 return (0, _interopRequireWildcard2["default"])(require(s));
               });
 
