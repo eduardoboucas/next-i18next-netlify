@@ -163,11 +163,11 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
                   _fs["default"].readdirSync(srcPath)
                 );
                 console.log(
-                  "---> root (2):",
+                  "---> root (fs):",
                   require("fs").readdirSync(rootPath)
                 );
                 console.log(
-                  "---> src (2):",
+                  "---> src (fs):",
                   require("fs").readdirSync(srcPath)
                 );
                 console.log(
