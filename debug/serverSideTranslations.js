@@ -189,7 +189,7 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
 
                 try {
                   const requiredmod = require(s);
-                  console.log("---> required", requiredmod);
+                  console.log("---> required ", requiredmod);
                 } catch (e) {
                   console.log("----> require ERROR", e);
                 }
