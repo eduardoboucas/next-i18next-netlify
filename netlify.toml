@@ -1,5 +1,5 @@
 [build]
-command = "npm run build && cp debug/serverSideTranslations.js node_modules/next-i18next/dist/commonjs"
+command = "npm run build && cp -v debug/serverSideTranslations.js node_modules/next-i18next/dist/commonjs && cat node_modules/next-i18next/dist/commonjs/serverSideTranslations.js"
 publish = "out"
 
 [functions]
