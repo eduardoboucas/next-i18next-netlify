@@ -202,6 +202,8 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
                   console.log("---> readfile   ERROR", e);
                 }
 
+                console.log("--> require:", require);
+
                 return (0, _interopRequireWildcard2["default"])(requiredmod);
               });
 
