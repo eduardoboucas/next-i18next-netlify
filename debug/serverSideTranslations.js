@@ -155,14 +155,6 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
                 const rootPath = _path["default"].resolve("./");
                 const srcPath = _path["default"].resolve("./src");
                 console.log(
-                  "---> root (1):",
-                  _fs["default"].readdirSync(rootPath)
-                );
-                console.log(
-                  "---> src (1):",
-                  _fs["default"].readdirSync(srcPath)
-                );
-                console.log(
                   "---> root (fs):",
                   require("fs").readdirSync(rootPath)
                 );
