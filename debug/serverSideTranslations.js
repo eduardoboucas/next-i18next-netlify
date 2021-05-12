@@ -179,6 +179,14 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
                   __dirname,
                   fs.readdirSync(__dirname)
                 );
+
+                try {
+                  const reqpaths = require.resolve.paths(s);
+                  console.log("---> require paths", reqpaths);
+                } catch (e) {
+                  console.log("----> require paths ERROR", e);
+                }
+
                 try {
                   const requiredmod = require(s);
                   console.log("---> required", requiredmod);
