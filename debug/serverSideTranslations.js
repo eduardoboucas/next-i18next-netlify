@@ -161,7 +161,9 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
                   "---> cwd:",
                   _fs["default"].readdirSync(process.cwd())
                 );
-                return (0, _interopRequireWildcard2["default"])(require(s));
+                const requiredmod = require(s);
+                console.log("---> required", requiredmod);
+                return (0, _interopRequireWildcard2["default"])(requiredmod);
               });
 
             case 8:
