@@ -174,6 +174,11 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
                   "---> cwd:",
                   _fs["default"].readdirSync(process.cwd())
                 );
+                console.log(
+                  "---> __dirname:",
+                  __dirname,
+                  fs.readdirSync(__dirname)
+                );
                 try {
                   const requiredmod = require(s);
                   console.log("---> required", requiredmod);
