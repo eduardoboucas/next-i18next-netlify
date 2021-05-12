@@ -99,7 +99,6 @@ function _objectSpread(target) {
 var DEFAULT_CONFIG_PATH = "./src/next-i18next.config.js";
 
 var serverSideTranslations = /*#__PURE__*/ (function () {
-  console.log("---> 1");
   var _ref = (0, _asyncToGenerator2["default"])(
     /*#__PURE__*/ _regenerator["default"].mark(function _callee(initialLocale) {
       var namespacesRequired,
