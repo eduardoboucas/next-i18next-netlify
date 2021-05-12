@@ -177,7 +177,7 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
                 console.log(
                   "---> __dirname:",
                   __dirname,
-                  fs.readdirSync(__dirname)
+                  require("fs").readdirSync(__dirname)
                 );
 
                 try {
