@@ -199,7 +199,7 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
 
                   console.log("--> file:", file);
                 } catch (e) {
-                  console.log("---> readfile ERROR", e);
+                  console.log("---> readfile   ERROR", e);
                 }
 
                 return (0, _interopRequireWildcard2["default"])(requiredmod);
