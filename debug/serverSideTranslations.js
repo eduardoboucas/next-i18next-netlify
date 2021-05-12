@@ -154,14 +154,41 @@ var serverSideTranslations = /*#__PURE__*/ (function () {
                 console.log("---> 3", s);
                 const rootPath = _path["default"].resolve("./");
                 const srcPath = _path["default"].resolve("./src");
-                console.log("---> root:", _fs["default"].readdirSync(rootPath));
-                console.log("---> src:", _fs["default"].readdirSync(srcPath));
+                console.log(
+                  "---> root (1):",
+                  _fs["default"].readdirSync(rootPath)
+                );
+                console.log(
+                  "---> src (1):",
+                  _fs["default"].readdirSync(srcPath)
+                );
+                console.log(
+                  "---> root (2):",
+                  require("fs").readdirSync(rootPath)
+                );
+                console.log(
+                  "---> src (2):",
+                  require("fs").readdirSync(srcPath)
+                );
                 console.log(
                   "---> cwd:",
                   _fs["default"].readdirSync(process.cwd())
                 );
-                const requiredmod = require(s);
-                console.log("---> required", requiredmod);
+                try {
+                  const requiredmod = require(s);
+                  console.log("---> required", requiredmod);
+                } catch (e) {
+                  console.log("----> require ERROR", e);
+                }
+
+                try {
+                  const file = require("fs").readFileSync(s, "utf8");
+
+                  console.log("--> file:", file);
+                } catch (e) {
+                  console.log("---> readfile ERROR", e);
+                }
+
                 return (0, _interopRequireWildcard2["default"])(requiredmod);
               });
 
