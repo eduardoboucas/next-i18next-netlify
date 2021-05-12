@@ -96,7 +96,7 @@ function _objectSpread(target) {
   return target;
 }
 
-var DEFAULT_CONFIG_PATH = "./src/next-i18next.config.js";
+var DEFAULT_CONFIG_PATH = "./next-i18next.config.js";
 
 var serverSideTranslations = /*#__PURE__*/ (function () {
   var _ref = (0, _asyncToGenerator2["default"])(
