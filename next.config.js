@@ -1,20 +1,20 @@
-const {i18n} = require('./next-i18next.config')
+const { i18n } = require("./next-i18next.config");
 
 module.exports = {
   i18n,
-  pageExtensions: ['mdx', 'jsx', 'js', 'ts', 'tsx'],
+  pageExtensions: ["mdx", "jsx", "js", "ts", "tsx"],
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"]
+      use: ["@svgr/webpack"],
     });
 
     return config;
   },
-  target: "serverless",
+  target: "experimental-serverless-trace",
   // unstableNetlifyFunctionsSupport: {
   //   "pages/[[...pid]].js": {
   //     includeDirs: ["public"]
   //   }
   // }
-}
+};
